@@ -5,9 +5,9 @@
 
 <script setup>
 import { provide, readonly } from 'vue';
-import HeaderComponent from '@/components/UI/Header.vue';
+import HeaderComponent from '@/components/UI/HeaderComponent.vue';
 
-provide('homeLabel', readonly('Vue 3 '));
+provide('homeLabel', readonly('Vue 3'));
 </script>
 
 <style lang="scss">

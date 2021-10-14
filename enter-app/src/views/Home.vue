@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <h1>{{ label }}</h1>
-    <input-component :type="'text'" v-model:val.trim="val"></input-component>
+    <input-component type="text" v-model:val.trim="val"></input-component>
     <p class="input-text-value">{{ val }}</p>
   </div>
 </template>
