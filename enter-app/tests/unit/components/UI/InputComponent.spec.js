@@ -22,9 +22,9 @@ describe('HelloWorld.vue', () => {
     let str = 't';
     const inputEl = wrapper.find('input');
 
-    inputEl.trigger('input', str);
+    inputEl.setValue(str);
     expect(wrapper.emitted()).toHaveProperty('update:val');
 
-    expect(wrapper.emitted().input[0][0]['0']).toEqual(str);
+    expect(wrapper.emitted()['update:val'][0]).toEqual([str]);
   });
 });
